@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --floral-white: #FFFAF0;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+body {
+    background: var(--bg);
+    color: white;
+    font-family: helvetica;
+    height: 100vh;
+    width: 100vw;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #132026;
+    height: 7%;
+}
+
+.nav-links {
+    display: inherit;
+    flex-wrap: nowrap;
+    list-style-type: none;
+}
+
+.nav-links li {
+    margin-right: 10px; /* Add spaces between <li> elements */
+}
+
+.nav-links li:last-child {
+    margin-right: 0px; /* Remove space from the last element to prevent extra space */
+}
+
+nav .square-button {
+    width: 35px;
+    height: 35px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    justify-content: center;
+}
+  
+nav .square-button:hover {
+    background-color: darkgreen;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 88%;
+}
+
+main h2, p {
+    display: block;
+}
+
+.normal-row {
+    display: inherit;
+    height: calc(100%/3);
+}
+
+.adjust-row {
+    display: inherit;
+    height: calc(100%/3);
+    justify-content: right;
+}
+
+.profile {
+    display: inherit;
+    flex: 60%;
+    flex-direction: column;
+    max-width: 60%;
+    background-color: #e25a5c;
+    padding: 15px;
+    box-shadow: inset -21px 0px 13px -13px rgba(50, 50, 50, 0.75)
+}
+
+.education {
+    display: inherit;
+    flex: 40%;
+    flex-direction: column;
+    max-width: 40%;
+    background-color: #22434a;
+    padding: 15px;
+}
+
+.experience {
+    display: inherit;
+    flex: 40%;
+    flex-direction: column;
+    max-width: 40%;
+    background-color: #257d91;
+    height: 200%;
+    padding: 15px;
+    box-shadow: inset 0px 21px 13px -13px rgba(50, 50, 50, 0.75)
+}
+
+.contact {
+    display: inherit;
+    position: relative;
+    flex: 20%;
+    flex-direction: column;
+    max-width: 20%;
+    background-color: #132026;
+    padding: 15px;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 45px;
+}
+
+.contact > p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.contact .contact-detail {
+    position: absolute;
+    padding: 15px;
+    bottom: 0;
+    left: 0;
+}
+
+.achievement {
+    display: inherit;
+    flex: 40%;
+    flex-direction: column;
+    max-width: 40%;
+    background-color: #22434a;
+    padding: 15px;
+    box-shadow: inset 0px -21px 13px -13px rgba(50, 50, 50, 0.75)
+}
+
+.language {
+    display: inherit;
+    flex: 20%;
+    flex-direction: column;
+    max-width: 20%;
+    background-color: #105864;
+    padding: 15px;
+    box-shadow: inset 21px 0px 13px -13px rgba(50, 50, 50, 0.75)
+}
+
+.skill {
+    display: inherit;
+    flex: 40%;
+    flex-direction: column;
+    max-width: 40%;
+    background-color: #105864;
+    padding: 15px;
+}
+
+footer {
+    display: flex;
+    height: 5%;
+    align-items: center;
+    justify-content: center;
+    background-color: #132026;
+}
+
+footer .square-button {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+footer .square-button:hover {
+    background-color: darkred;
+}
+
+/* .light-theme {
+    --bg: var(--floral-white);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+} */
